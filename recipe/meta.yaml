@@ -1,5 +1,5 @@
 {% set name = "napari-convpaint" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-convpaint-{{ version }}.tar.gz
-  sha256: 2bc91f033c29d296a35d93ab38b463e5a5577f0775076c73ab2e2c5cf5ad12fd
+  sha256: 592f19b9c2576a5b6b877ce87ad3ec6abab02d80fb72c4b142968ca37bf6b6c7
 
 build:
   noarch: python
@@ -16,24 +16,29 @@ build:
 
 requirements:
   host:
+    - pip
     - python >=3.8
     - setuptools
-    - wheel
     - setuptools-scm
-    - pip
+    - wheel
   run:
-    - python >=3.8
-    - scikit-learn
-    - scikit-image
-    - pytorch
-    - torchvision
-    - pandas
-    - numpy
-    - joblib
-    - zarr
     - einops
+    - joblib
+    - magicgui
+    - napari
     - napari-guitils
     - napari-annotation-project
+    - numpy
+    - pandas
+    - python >=3.8
+    - pytorch
+    - pyyaml
+    - qtpy
+    - scikit-image
+    - scikit-learn
+    - tifffile
+    - torchvision
+    - zarr
 
 test:
   imports:
@@ -45,10 +50,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/guiwitz/napari-convpaint
+  home: https://pypi.org/project/napari-convpaint
   summary: A plugin for segmentation by pixel classification using convolutional feature extraction
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/guiwitz/napari-convpaint
 
 extra:
   recipe-maintainers:
