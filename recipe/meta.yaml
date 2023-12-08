@@ -16,24 +16,29 @@ build:
 
 requirements:
   host:
+    - pip
     - python >=3.8
     - setuptools
-    - wheel
     - setuptools-scm
-    - pip
+    - wheel
   run:
-    - python >=3.8
-    - scikit-learn
-    - scikit-image
-    - pytorch
-    - torchvision
-    - pandas
-    - numpy
-    - joblib
-    - zarr
     - einops
+    - joblib
+    - magicgui
+    - napari
     - napari-guitils
     - napari-annotation-project
+    - numpy
+    - pandas
+    - python >=3.8
+    - pytorch
+    - pyyaml
+    - qtpy
+    - scikit-image
+    - scikit-learn
+    - tifffile
+    - torchvision
+    - zarr
 
 test:
   imports:
@@ -45,10 +50,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/guiwitz/napari-convpaint
+  home: https://pypi.org/project/napari-convpaint
   summary: A plugin for segmentation by pixel classification using convolutional feature extraction
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/guiwitz/napari-convpaint
 
 extra:
   recipe-maintainers:
