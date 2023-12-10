@@ -3,11 +3,13 @@ About napari-convpaint-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-convpaint-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/guiwitz/napari-convpaint
+Home: https://pypi.org/project/napari-convpaint
 
 Package license: BSD-3-Clause
 
 Summary: A plugin for segmentation by pixel classification using convolutional feature extraction
+
+Development: https://github.com/guiwitz/napari-convpaint
 
 Current build status
 ====================

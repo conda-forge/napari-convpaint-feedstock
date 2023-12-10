@@ -1,5 +1,5 @@
 {% set name = "napari-convpaint" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-convpaint-{{ version }}.tar.gz
-  sha256: 592f19b9c2576a5b6b877ce87ad3ec6abab02d80fb72c4b142968ca37bf6b6c7
+  sha256: 07ae63c8dfb616a8e30b968d635791d6d8c618d9100eec9cd6a9bc3ade67024f
 
 build:
   noarch: python
@@ -26,8 +26,8 @@ requirements:
     - joblib
     - magicgui
     - napari
-    - napari-guitils
     - napari-annotation-project
+    - napari-guitils
     - numpy
     - pandas
     - python >=3.8
@@ -37,7 +37,7 @@ requirements:
     - scikit-image
     - scikit-learn
     - tifffile
-    - torchvision
+    - torchvision >=0.13.0
     - zarr
 
 test:
