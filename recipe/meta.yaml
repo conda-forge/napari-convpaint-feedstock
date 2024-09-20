@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools
     - setuptools-scm
     - wheel
@@ -30,7 +30,7 @@ requirements:
     - napari-guitils
     - numpy
     - pandas
-    - python >=3.8
+    - python >=3.9
     - pytorch
     - pyyaml
     - qtpy
