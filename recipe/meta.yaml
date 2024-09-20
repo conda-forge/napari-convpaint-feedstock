@@ -1,13 +1,13 @@
 {% set name = "napari-convpaint" %}
-{% set version = "0.2.1" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-convpaint-{{ version }}.tar.gz
-  sha256: 07ae63c8dfb616a8e30b968d635791d6d8c618d9100eec9cd6a9bc3ade67024f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: df7c8ddd8ac70254ef562bf17df3c50570498cd306ba2dd16343f358ae3e8f6d
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools
     - setuptools-scm
     - wheel
@@ -30,7 +30,7 @@ requirements:
     - napari-guitils
     - numpy
     - pandas
-    - python >=3.8
+    - python >=3.9
     - pytorch
     - pyyaml
     - qtpy
