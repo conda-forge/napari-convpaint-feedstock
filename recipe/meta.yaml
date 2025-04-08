@@ -22,6 +22,7 @@ requirements:
     - setuptools-scm
     - wheel
   run:
+    - catboost
     - einops
     - joblib
     - magicgui
