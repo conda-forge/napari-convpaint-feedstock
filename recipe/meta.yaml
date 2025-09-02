@@ -1,5 +1,5 @@
 {% set name = "napari-convpaint" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: fcef3b33ecf7f395de77b29588167c93b0a79f260f35668802152e4a582bfb40
+  sha256: 53dcc8eb2178839a66e6295e8f455592ab9d1dca95e8eeb8e3f379093847697b
 
 build:
   noarch: python
