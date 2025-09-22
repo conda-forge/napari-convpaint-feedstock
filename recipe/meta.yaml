@@ -1,5 +1,5 @@
 {% set name = "napari-convpaint" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 53dcc8eb2178839a66e6295e8f455592ab9d1dca95e8eeb8e3f379093847697b
+  sha256: 4a5e010021ddcf0c6f5b4bdbcb4512111c39955f3a7949f5dba50bdca0e583a2
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - napari-annotation-project
     - napari-guitils
     - numpy
+    - omegaconf
     - pandas
     - python >={{ python_min }}
     - pytorch
@@ -38,6 +39,7 @@ requirements:
     - scikit-image
     - scikit-learn
     - tifffile
+    - timm
     - torchvision >=0.13.0
     - zarr
 
