@@ -1,5 +1,5 @@
 {% set name = "napari-convpaint" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -30,6 +30,7 @@ requirements:
     - napari-annotation-project
     - napari-guitils
     - numpy
+    - omegaconf
     - pandas
     - python >={{ python_min }}
     - pytorch
@@ -38,6 +39,7 @@ requirements:
     - scikit-image
     - scikit-learn
     - tifffile
+    - timm
     - torchvision >=0.13.0
     - zarr
 
