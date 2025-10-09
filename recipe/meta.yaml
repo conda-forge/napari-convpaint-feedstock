@@ -1,5 +1,5 @@
 {% set name = "napari-convpaint" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 4a5e010021ddcf0c6f5b4bdbcb4512111c39955f3a7949f5dba50bdca0e583a2
+  sha256: 64f8e66c04188ca9bf411c05e324e37091f4cf2bb3508eaf8922658535fd1401
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - catboost
+    - catboost >=1.2.8
     - einops
     - joblib
     - magicgui
