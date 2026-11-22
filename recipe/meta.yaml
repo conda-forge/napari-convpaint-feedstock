@@ -1,5 +1,5 @@
 {% set name = "napari-convpaint" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 8c27f4bdbe0b376e8d87d43a53703b1b950da8a35974c63da87d1cb1b8716d14
+  sha256: b5a6e8a665e371a35507bf425582a10c5853a43cec5610210f45434fc5f1a027
 
 build:
   noarch: python
@@ -23,23 +23,29 @@ requirements:
     - wheel
   run:
     - catboost >=1.2.8
+    - dask
     - einops
+    - imageio
     - joblib
     - magicgui
     - napari
     - napari-annotation-project
-    - napari-guitils
+    - napari-guitils >=0.2.0
     - numpy
     - omegaconf
     - pandas
+    - platformdirs
+    - psutil
     - python >={{ python_min }}
     - pytorch
     - pyyaml
     - qtpy
+    - requests
     - scikit-image
     - scikit-learn
+    - scipy
     - tifffile
-    - timm
+    - timm >=1.0.20
     - torchvision >=0.13.0
     - zarr
 
