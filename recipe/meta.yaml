@@ -23,23 +23,29 @@ requirements:
     - wheel
   run:
     - catboost >=1.2.8
+    - dask
     - einops
+    - imageio
     - joblib
     - magicgui
     - napari
     - napari-annotation-project
-    - napari-guitils
+    - napari-guitils >=0.2.0
     - numpy
     - omegaconf
     - pandas
+    - platformdirs
+    - psutil
     - python >={{ python_min }}
     - pytorch
     - pyyaml
     - qtpy
+    - requests
     - scikit-image
     - scikit-learn
+    - scipy
     - tifffile
-    - timm
+    - timm >=1.0.20
     - torchvision >=0.13.0
     - zarr
 
